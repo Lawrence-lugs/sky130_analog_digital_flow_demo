@@ -1,2 +1,5 @@
 .env
 caravel/*
+*.log
+*runs*
+processing_element/sims/*

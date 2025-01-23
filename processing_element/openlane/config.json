@@ -1,0 +1,8 @@
+{
+    "DESIGN_NAME": "multiply_add",
+    "VERILOG_FILES": [
+        "dir::../rtl/multiply_add.v"
+    ],
+    "CLOCK_PERIOD": 10,
+    "CLOCK_PORT": "clk"
+}
