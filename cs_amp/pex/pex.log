@@ -1,0 +1,26 @@
+
+Magic 8.3 revision 513 - Compiled on Sun Jan 12 02:03:47 PM CET 2025.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Loading "pex.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "$$$CONTEXT_INFO$$$".
+Reading "vias_gen".
+Reading "res_poly$1".
+Reading "nfet".
+Reading "cs".
+Extracting cs_flat into cs_flat.ext:
+cs_flat: 2 warnings
+exttosim finished.
+exttospice finished.

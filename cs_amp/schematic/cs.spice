@@ -1,0 +1,12 @@
+** sch_path: /foss/designs/cs_amp/schematic/cs.sch
+.subckt cs vds_fr vdd vgs_fr
+.iopin vds_fr
+.ipin vdd
+.ipin vgs_fr
+XM2 vds_fr vgs_fr GND GND sky130_fd_pr__nfet_01v8_lvt L=0.5 W=30 nf=10 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+**** begin user architecture code
+
+
+.ends
+.end

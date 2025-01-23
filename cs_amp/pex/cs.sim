@@ -1,0 +1,75 @@
+| units: 500000 tech: sky130A format: MIT
+x res_poly$1_0/a_n141_n196# VDS_FR VDD GND s=122952,1436 d=122952,1436 l=392 w=0 x=-153 y=122 sky130_fd_pr__res_xhigh_po_1p41
+x VGS_FR GND VDS_FR GND s=30000,700 d=30000,700 l=100 w=600 x=744 y=12 sky130_fd_pr__nfet_01v8_lvt
+x VGS_FR VDS_FR GND GND s=30000,700 d=30000,700 l=100 w=600 x=1344 y=12 sky130_fd_pr__nfet_01v8_lvt
+x VGS_FR VDS_FR GND GND s=36000,1320 d=30000,700 l=100 w=600 x=544 y=12 sky130_fd_pr__nfet_01v8_lvt
+x VGS_FR GND VDS_FR GND s=30000,700 d=30000,700 l=100 w=600 x=1544 y=12 sky130_fd_pr__nfet_01v8_lvt
+x VGS_FR VDS_FR GND GND s=30000,700 d=30000,700 l=100 w=600 x=2144 y=12 sky130_fd_pr__nfet_01v8_lvt
+x VGS_FR VDS_FR GND GND s=30000,700 d=30000,700 l=100 w=600 x=944 y=12 sky130_fd_pr__nfet_01v8_lvt
+x VGS_FR VDS_FR GND GND s=30000,700 d=30000,700 l=100 w=600 x=1744 y=12 sky130_fd_pr__nfet_01v8_lvt
+x VGS_FR GND VDS_FR GND s=30000,700 d=36000,1320 l=100 w=600 x=2344 y=12 sky130_fd_pr__nfet_01v8_lvt
+x VGS_FR GND VDS_FR GND s=30000,700 d=30000,700 l=100 w=600 x=1144 y=12 sky130_fd_pr__nfet_01v8_lvt
+x VGS_FR GND VDS_FR GND s=30000,700 d=30000,700 l=100 w=600 x=1944 y=12 sky130_fd_pr__nfet_01v8_lvt
+C VDS_FR0 5.1
+R VDS_FR 7180
+= VDS_FR res_poly$1_0/a_n141_196#
+= VDS_FR vias_gen_0/m1_0_0#
+= VDS_FR vias_gen_1/m1_0_0#
+= VDS_FR vias_gen_4/m1_0_0#
+= VDS_FR nfet$1_0/a_1960_0#
+= VDS_FR vias_gen_5/m1_0_0#
+= VDS_FR nfet$1_0/a_0_0#
+= VDS_FR vias_gen_6[3]/m1_0_0#
+= VDS_FR nfet$1_0/a_1560_0#
+= VDS_FR vias_gen_6[2]/m1_0_0#
+= VDS_FR nfet$1_0/a_1160_0#
+= VDS_FR vias_gen_6[1]/m1_0_0#
+= VDS_FR nfet$1_0/a_760_0#
+= VDS_FR vias_gen_6[0]/m1_0_0#
+= VDS_FR nfet$1_0/a_360_0#
+R GND 29980
+= GND res_poly$1_0/a_n271_n762#
+= GND vias_gen_0/VSUBS
+= GND vias_gen_1/VSUBS
+= GND vias_gen_4/VSUBS
+= GND vias_gen_5/VSUBS
+= GND vias_gen_6[3]/VSUBS
+= GND vias_gen_6[2]/VSUBS
+= GND vias_gen_6[1]/VSUBS
+= GND vias_gen_6[0]/VSUBS
+= GND vias_gen_2/VSUBS
+= GND vias_gen_3/VSUBS
+= GND vias_gen_7[4]/VSUBS
+= GND vias_gen_7[3]/VSUBS
+= GND vias_gen_7[2]/VSUBS
+= GND vias_gen_7[1]/VSUBS
+= GND vias_gen_7[0]/VSUBS
+= GND vias_gen_7[4]/m1_0_0#
+= GND nfet$1_0/a_1760_0#
+= GND vias_gen_7[3]/m1_0_0#
+= GND nfet$1_0/a_1360_0#
+= GND vias_gen_7[2]/m1_0_0#
+= GND nfet$1_0/a_960_0#
+= GND vias_gen_7[1]/m1_0_0#
+= GND nfet$1_0/a_560_0#
+= GND vias_gen_7[0]/m1_0_0#
+= GND nfet$1_0/a_160_0#
+= GND nfet$1_0/a_2020_0#
+= GND VSUBS
+C VGS_FR0 3.6
+R VGS_FR 5077
+= VGS_FR nfet$1_0/a_60_n40#
+= VGS_FR nfet$1_0/a_1860_n40#
+= VGS_FR nfet$1_0/a_1660_n40#
+= VGS_FR nfet$1_0/a_1460_n40#
+= VGS_FR nfet$1_0/a_1260_n40#
+= VGS_FR nfet$1_0/a_1060_n40#
+= VGS_FR nfet$1_0/a_860_n40#
+= VGS_FR nfet$1_0/a_660_n40#
+= VGS_FR nfet$1_0/a_460_n40#
+= VGS_FR nfet$1_0/a_260_n40#
+R VDD 80
+= VDD res_poly$1_0/a_n141_n632#
+= VDD vias_gen_3/m1_0_0#
+= VDD vias_gen_2/m1_0_0#
+R res_poly$1_0/a_n141_n196# 2780

@@ -1,0 +1,5 @@
+VDS_FR 370 564 m2
+GND 2548 280 li
+VGS_FR 693 685 m1
+VDD 25 -26 m1
+res_poly$1_0/a_n141_n196# -153 122 xres

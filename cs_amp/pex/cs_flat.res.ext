@@ -1,0 +1,106 @@
+scale 1000 1 500000
+rnode "VGS_FR.t2" 0 0 1394 321 0
+rnode "VGS_FR.t4" 0 0 1194 321 0
+rnode "VGS_FR.n0" 0 0 1194 994 0
+rnode "VGS_FR.t1" 0 0 994 321 0
+rnode "VGS_FR.n1" 0 0 994 994 0
+rnode "VGS_FR.t0" 0 0 594 321 0
+rnode "VGS_FR.t3" 0 0 794 321 0
+rnode "VGS_FR.n2" 0 0 794 994 0
+rnode "VGS_FR" 0 0 907 998 0
+resist "VGS_FR" "VGS_FR.n1" 0.236413
+resist "VGS_FR" "VGS_FR.n2" 0.307065
+resist "VGS_FR.n1" "VGS_FR.n0" 0.543478
+resist "VGS_FR.n0" "VGS_FR.t4" 485.686
+resist "VGS_FR.n1" "VGS_FR.t1" 485.686
+resist "VGS_FR.n2" "VGS_FR.t3" 485.686
+resist "VGS_FR.n0" "VGS_FR.t2" 486.229
+resist "VGS_FR.n2" "VGS_FR.t0" 486.229
+rnode "VDD.t0" 0 0 -13 -97 0
+rnode "VDD" 0 0 25 -27 0
+resist "VDD" "VDD.t0" 0.803046
+rnode "VDS_FR.t0" 0 0 1344 321 0
+rnode "VDS_FR.t1" 0 0 1244 321 0
+rnode "VDS_FR.n0" 0 0 1294 861 0
+rnode "VDS_FR.t3" 0 0 944 321 0
+rnode "VDS_FR.t2" 0 0 844 321 0
+rnode "VDS_FR.n1" 0 0 894 861 0
+rnode "VDS_FR.n2" 0 0 894 860 0
+rnode "VDS_FR.n3" 0 0 514 789 0
+rnode "VDS_FR.n4" 0 0 514 717 0
+rnode "VDS_FR.n5" 0 0 514 717 0
+rnode "VDS_FR.n6" 0 0 514 645 0
+rnode "VDS_FR.n7" 0 0 514 573 0
+rnode "VDS_FR.n8" 0 0 514 429 0
+rnode "VDS_FR.n9" 0 0 514 573 0
+rnode "VDS_FR.n10" 0 0 514 501 0
+rnode "VDS_FR.n11" 0 0 514 429 0
+rnode "VDS_FR.n12" 0 0 514 357 0
+rnode "VDS_FR.t4" 0 0 544 321 0
+rnode "VDS_FR.n13" 0 0 514 357 0
+rnode "VDS_FR.n14" 0 0 514 357 0
+rnode "VDS_FR.n15" 0 0 514 429 0
+rnode "VDS_FR.n16" 0 0 514 501 0
+rnode "VDS_FR.n17" 0 0 514 501 0
+rnode "VDS_FR.n18" 0 0 514 573 0
+rnode "VDS_FR.n19" 0 0 514 645 0
+rnode "VDS_FR.n20" 0 0 514 645 0
+rnode "VDS_FR.n21" 0 0 514 717 0
+rnode "VDS_FR.n22" 0 0 514 789 0
+rnode "VDS_FR.n23" 0 0 514 789 0
+rnode "VDS_FR.n24" 0 0 514 860 0
+rnode "VDS_FR.n25" 0 0 514 860 0
+rnode "VDS_FR.t5" 0 0 -13 731 0
+rnode "VDS_FR" 0 0 370 859 0
+resist "VDS_FR.n24" "VDS_FR.n23" 0.170771
+resist "VDS_FR.n17" "VDS_FR.n8" 0.195652
+resist "VDS_FR.n18" "VDS_FR.n17" 0.195652
+resist "VDS_FR.n19" "VDS_FR.n18" 0.195652
+resist "VDS_FR.n19" "VDS_FR.n4" 0.195652
+resist "VDS_FR.n23" "VDS_FR.n4" 0.195652
+resist "VDS_FR" "VDS_FR.n25" 0.310345
+resist "VDS_FR.n25" "VDS_FR.n2" 0.818965
+resist "VDS_FR.n13" "VDS_FR.n8" 1.21531
+resist "VDS_FR" "VDS_FR.t5" 3.92939
+resist "VDS_FR.n25" "VDS_FR.n24" 4.5
+resist "VDS_FR.n0" "VDS_FR.t1" 5
+resist "VDS_FR.n0" "VDS_FR.t0" 5
+resist "VDS_FR.n1" "VDS_FR.t2" 5
+resist "VDS_FR.n1" "VDS_FR.t3" 5
+resist "VDS_FR.n14" "VDS_FR.n13" 6.30849
+resist "VDS_FR.n22" "VDS_FR.n3" 9.2678
+resist "VDS_FR.n15" "VDS_FR.n8" 9.3
+resist "VDS_FR.n17" "VDS_FR.n16" 9.3
+resist "VDS_FR.n18" "VDS_FR.n7" 9.3
+resist "VDS_FR.n20" "VDS_FR.n19" 9.3
+resist "VDS_FR.n21" "VDS_FR.n4" 9.3
+resist "VDS_FR.n23" "VDS_FR.n22" 9.3
+resist "VDS_FR.n2" "VDS_FR.n1" 17.5553
+resist "VDS_FR.n2" "VDS_FR.n0" 18.4174
+resist "VDS_FR.n24" "VDS_FR.n3" 25.7832
+resist "VDS_FR.n15" "VDS_FR.n14" 27.1059
+resist "VDS_FR.n16" "VDS_FR.n15" 27.1059
+resist "VDS_FR.n16" "VDS_FR.n7" 27.1059
+resist "VDS_FR.n20" "VDS_FR.n7" 27.1059
+resist "VDS_FR.n21" "VDS_FR.n20" 27.1059
+resist "VDS_FR.n22" "VDS_FR.n21" 27.1059
+resist "VDS_FR.t4" "VDS_FR.n12" 72
+resist "VDS_FR.n12" "VDS_FR.n11" 144
+resist "VDS_FR.n11" "VDS_FR.n10" 144
+resist "VDS_FR.n10" "VDS_FR.n9" 144
+resist "VDS_FR.n9" "VDS_FR.n6" 144
+resist "VDS_FR.n6" "VDS_FR.n5" 144
+resist "VDS_FR.n13" "VDS_FR.t4" 180.518
+resist "VDS_FR.n14" "VDS_FR.n12" 185
+resist "VDS_FR.n15" "VDS_FR.n11" 185
+resist "VDS_FR.n16" "VDS_FR.n10" 185
+resist "VDS_FR.n9" "VDS_FR.n7" 185
+resist "VDS_FR.n20" "VDS_FR.n6" 185
+resist "VDS_FR.n21" "VDS_FR.n5" 185
+resist "VDS_FR.n5" "VDS_FR.n3" 256.483
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1144 -279 1145 -278  "GND" "VGS_FR.t4" 200 0 "GND" 1200 60000,1300 "VDS_FR.t1" 1200 60000,1300
+device msubckt sky130_fd_pr__nfet_01v8_lvt 744 -279 745 -278  "GND" "VGS_FR.t3" 200 0 "GND" 1200 60000,1300 "VDS_FR.t2" 1200 60000,1300
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1344 -279 1345 -278  "GND" "VGS_FR.t2" 200 0 "VDS_FR.t0" 1200 60000,1300 "GND" 1200 72000,2520
+device msubckt sky130_fd_pr__nfet_01v8_lvt 944 -279 945 -278  "GND" "VGS_FR.t1" 200 0 "VDS_FR.t3" 1200 60000,1300 "GND" 1200 60000,1300
+device msubckt sky130_fd_pr__nfet_01v8_lvt 544 -279 545 -278  "GND" "VGS_FR.t0" 200 0 "VDS_FR.t4" 1200 72000,2520 "GND" 1200 60000,1300
+device rsubckt sky130_fd_pr__res_xhigh_po_1p41 -154 121 -153 122  "GND" "a_n154_121#" 564 0 "VDS_FR.t5" 392 122952,1436 "VDD.t0" 392 122952,1436

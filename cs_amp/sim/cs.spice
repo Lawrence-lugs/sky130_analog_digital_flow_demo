@@ -1,0 +1,46 @@
+** sch_path: /foss/designs/cs_amp/schematic/cs.sch
+**.subckt cs vds_fr vdd vgs_fr
+*.iopin vds_fr
+*.ipin vdd
+*.ipin vgs_fr
+XM2 vds_fr vgs_fr GND GND sky130_fd_pr__nfet_01v8_lvt L=0.5 W=30 nf=10 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XR2 vds_fr vdd GND sky130_fd_pr__res_xhigh_po_1p41 L=2.12 mult=1 m=1
+**** begin user architecture code
+
+
+.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.option wnflag = 1 scale=1e-6
+
+vdd0 vdd 0 dc=1.8
+vin0 vgs_fr vgs dc=0 ac=1 sin(0 10m 1MEG
+vgs0 vgs 0 dc=0.707
+c0 vds_fr 0 5p
+
+.control
+set wr_vecnames
+save all
+
+save @m.xm2.msky130_fd_pr__nfet_01v8_lvt[id]
+dc vgs0 0 1.8 1m
+let id = m.xm2.msky130_fd_pr__nfet_01v8_lvt[id]
+let gm = deriv(id)
+let gain = -deriv(vds_fr)
+plot gain
+wrdata gain_vs_vout.csv gain
+
+ac dec 100 1 10G
+plot vdb(vds_fr)
+wrdata gain_fr.csv vdb(vds_fr)
+
+tran 10n 4u
+plot vgs_fr vds_fr
+wrdata sc_tran.csv vgs_fr vds_fr
+
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end
