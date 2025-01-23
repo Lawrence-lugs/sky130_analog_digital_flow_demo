@@ -3,3 +3,7 @@ caravel/*
 *.log
 *runs*
 processing_element/sims/*
+ic_dec
+.jupyter*
+.venv
+!.gitignore

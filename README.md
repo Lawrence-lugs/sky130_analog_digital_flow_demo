@@ -39,10 +39,23 @@ If you are planning to edit files *outside* of this VNC environment (i.e. your h
 
 For example, for me, I would clone all the repositories and make designs in `lquizon/eda/designs`. 
 
-# Setup
+# How to use
 
+1. Activate an iic_osic_tools terminal with X-Forwarding (follow the steps in the section above)
 1. Clone the demo files from the git
     1. `git clone https://github.com/Lawrence-lugs/sky130_analog_digital_flow_demo.git`
-2. Enter the cloned directory, and enter the repo folder
+2. Enter the cloned directory
     1. `cd sky130_analog_digital_flow_demo`
-3. Follow the steps in either `analog_demo.ipynb` or `digital_demo.ipynb`
+3. Run jupyter notebook. A firefox window should open showing the contents of the repository folder.
+    1. `jupyter notebook`
+4. Open either `analog_demo.ipynb` or `digital_demo.ipynb` for a full demo of the flow.
+    1. If the notebook encounters a "module not found" error after running for the first time, simply press the restart button at the top of the notebook.
+
+# Note for Windows Users
+
+Windows does not have an XServer which means *no windows* will pop up. An easy way to have an XServer in Windows is to download [MobaXTerm](https://mobaxterm.mobatek.net/download.html) and use that as your primary terminal.
+
+# Requirements
+
+* [JKU's IIC OSIC TOOLS docker](https://github.com/iic-jku/IIC-OSIC-TOOLS/) 
+* Docker Desktop
