@@ -1,7 +1,7 @@
 `define UNIT_DELAY #1
 `define FUNCTIONAL
-`include "/local/pdk/sky130A/libs.ref/sky130_fd_sc_hd/verilog/primitives.v"
-`include "/local/pdk/sky130A/libs.ref/sky130_fd_sc_hd/verilog/sky130_fd_sc_hd.v"
+`include "/foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/verilog/primitives.v"
+`include "/foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/verilog/sky130_fd_sc_hd.v"
 `timescale 1ns/1ps
 
 module multiply_add_tb;
