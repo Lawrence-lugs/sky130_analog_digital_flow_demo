@@ -9,3 +9,4 @@ ic_dec
 !.gitignore
 processing_element/openlane/from multiprocessing.resource_tracker import main;main(13)
 processing_element/openlane/from multiprocessing.resource_tracker import main;main(28)
+*sims*
