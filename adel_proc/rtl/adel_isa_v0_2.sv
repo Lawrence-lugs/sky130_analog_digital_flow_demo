@@ -1,7 +1,7 @@
-module adel (
-    input clk, nrst,
-    input [15:0] inst,
-    output reg [7:0] pc
+module adel (           // Architecture
+    input clk, nrst,    // Design that's
+    input [15:0] inst,  // Easy to
+    output reg [7:0] pc // Learn
 );
 reg signed [3:0][7:0] rf;
 wire [1:0] opc, dst, src1, src2 = inst[1:0];
