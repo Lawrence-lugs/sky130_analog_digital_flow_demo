@@ -1,14 +1,14 @@
 module adel (
     input clk, nrst,
     input [15:0] inst,
-    output reg [15:0] pc
+    output reg [7:0] pc
 );
-reg signed [3:0][15:0] rf;
+reg signed [3:0][7:0] rf;
 wire [1:0] opc, dest, src1, src2;
 wire w, rs;
 wire [7:0] imm;
-wire [15:0] b_op2 = rs ? rf[src2] : 16'(imm);
-wire [15:0] br_pc = pc + 16'(signed'(imm));
+wire [7:0] b_op2 = rs ? rf[src2] : imm;
+wire [7:0] br_pc = pc + imm;
 assign {w, opc, rs, dest, src1, imm} = inst;
 assign src2 = inst[1:0]; 
 always @(posedge clk or negedge nrst) begin
