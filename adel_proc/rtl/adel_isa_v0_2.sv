@@ -14,10 +14,10 @@ assign src2 = inst[1:0];
 always @(posedge clk or negedge nrst) begin
     if (!nrst) begin pc <= 0; rf <= 0; end else begin
     case ({w,opc})
-        3'b100: rf[dst] <= rf[src1] + (rs ? rf[src2] : imm);
-        3'b101: rf[dst] <= rf[src1] - (rs ? rf[src2] : imm);
-        3'b110: rf[dst] <= rf[src1] & (rs ? rf[src2] : imm);
-        3'b111: rf[dst] <= rf[src1] | (rs ? rf[src2] : imm);
+        4: rf[dst] <= rf[src1] + (rs ? rf[src2] : imm);
+        5: rf[dst] <= rf[src1] - (rs ? rf[src2] : imm);
+        6: rf[dst] <= rf[src1] & (rs ? rf[src2] : imm);
+        7: rf[dst] <= rf[src1] | (rs ? rf[src2] : imm);
     endcase
     pc <= !w & ( &opc & ^gl | opc == gl ) ? bpc : pc+1;
 end end
