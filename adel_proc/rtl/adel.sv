@@ -24,9 +24,9 @@ always @(posedge clk or negedge nrst) begin
     end else
         case (opc)
             2'b00: pc <= (rf[src1] == 0) ? br_pc : pc + 1;
-            2'b01: pc <= (rf[src1] != 0) ? br_pc : pc + 1;
-            2'b10: pc <= (rf[src1] < 0) ? br_pc : pc + 1;
-            2'b11: pc <= (rf[src1] > 0) ? br_pc : pc + 1;
+            2'b11: pc <= (rf[src1] != 0) ? br_pc : pc + 1;
+            2'b01: pc <= (rf[src1] < 0) ? br_pc : pc + 1;
+            2'b10: pc <= (rf[src1] > 0) ? br_pc : pc + 1;
         endcase
 end
 endmodule
