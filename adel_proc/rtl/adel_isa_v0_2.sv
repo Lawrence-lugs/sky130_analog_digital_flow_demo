@@ -21,4 +21,3 @@ always @(posedge clk or negedge nrst) begin
     pc <= !w & ( &opc & ^gl | opc == gl ) ? bpc : pc+1;
 end end
 endmodule
-

@@ -1,9 +1,11 @@
 {
     "DESIGN_NAME": "adel",
     "VERILOG_FILES": [
-        "dir::../rtl/adel_isa_v0_2.sv"
+        "dir::../rtl/adel.sv"
     ],
     "CLOCK_PERIOD": 10,
     "CLOCK_PORT": "clk",
     "FP_ASPECT_RATIO": 0.5
 }
+
+
